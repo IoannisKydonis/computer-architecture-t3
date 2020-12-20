@@ -113,8 +113,6 @@ Time<sub>1</sub> * (Peak Dynamic)<sub>1</sub> + (Time<sub>2</sub> - Time<sub>1</
 
 ### Ερώτημα 1
 
-### Ερώτημα 2
-
 ## Πηγές
 [1] [semiengineering.com - Power Consumption: Components of power consumption](https://semiengineering.com/knowledge_centers/low-power/low-power-design/power-consumption/)  
 [2] Tarek Darwish, Magdy Bayoumi - The Electrical Engineering Handbook (2005), pp 270-271
