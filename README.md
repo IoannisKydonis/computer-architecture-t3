@@ -95,15 +95,15 @@ Energy<sub>1</sub> < Energy<sub>2</sub>
 
 ή
 
-Time<sub>1</sub> * ((Peak Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (Time<sub>2</sub> - Time<sub>1</sub>) * (Total Leakage)<sub>1</sub> < Time<sub>2</sub> * ((Peak Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
+Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (Time<sub>2</sub> - Time<sub>1</sub>) * (Total Leakage)<sub>1</sub> < Time<sub>2</sub> * ((Runtime Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
 
 ή
 
-((Peak Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (39 / 40) * (Total Leakage)<sub>1</sub> < 40 * ((Peak Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
+((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (39 / 40) * (Total Leakage)<sub>1</sub> < 40 * ((Runtime Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
 
 ή
 
-(98.1063 + 36.8319) + (39 / 40) * 36.8319 < 40 * (1.6332 + 0.108687)
+(72.9199 + 36.8319) + (39 / 40) * 36.8319 < 40 * (2.96053 + 0.108687)
 (αδύνατο)
 </pre>
 
