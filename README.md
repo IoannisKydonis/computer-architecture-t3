@@ -23,6 +23,42 @@
 ### Ερώτημα 2
 
 Για να συγκρίνουμε 2 επεξεργαστές ως προς την κατανάλωση ενέργειας που απαιτούν, χρειάζεται να λάβουμε υπόψιν όχι μόνο της ισχύ τους αλλά και το πόσο γρήγορα εκτελούν τις επιθυμητές εντολές.
+Η σύγκριση λοιπόν πρέπει να γίνει με βάση την μετρική που δίνει το πηλίκο αριθμού εντολών ανά νομάδα έργου:
+```
+Efficiency = Instructions / Work
+
+ή
+
+Efficiency = (Instructions / Time) / (Work / Time)
+
+ή
+
+Efficiency = (Instructions / Time) / Power
+
+ή
+
+Efficiency = Instructions / (Time * Power)
+```
+
+οπότε για τη συγκεκριμένη περίπτωση όπου Power<sub>1</sub> = 4 W και Power<sub>2</sub> = 40 W έχουμε:
+
+<pre>
+Efficiency<sub>1</sub> < Efficiency<sub>2</sub>
+
+ή 
+
+Instructions / (Time<sub>1</sub> * Power<sub>1</sub>) < Instructions / (Time<sub>2</sub> * Power<sub>2</sub>)
+
+ή
+
+Time<sub>1</sub> * Power<sub>1</sub> > Time<sub>2</sub> * Power<sub>2</sub>
+
+ή
+
+Time<sub>2</sub> < Time<sub>1</sub> / 10
+</pre>
+
+Αν λοιπόν ο επεξεργαστής με ισχύ 40 W εκτελεί τον επιθυμητό αριθμό εντολών σε χρόνο μικρότερο από το ένα δέκατο του χρόνου που χρειάζεται ο επεξεργαστής των 4 W τότε μπορεί να προσφέρει στο σύστημα μεγαλύτερη διάρκεια μπαταρίας.
 
 ## Πηγές
 [1] [semiengineering.com - Power Consumption: Components of power consumption](https://semiengineering.com/knowledge_centers/low-power/low-power-design/power-consumption/)  
