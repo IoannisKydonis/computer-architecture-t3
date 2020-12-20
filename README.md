@@ -60,6 +60,55 @@ Time<sub>2</sub> < Time<sub>1</sub> / 10
 
 Αν λοιπόν ο επεξεργαστής με ισχύ 40 W εκτελεί τον επιθυμητό αριθμό εντολών σε χρόνο μικρότερο από το ένα δέκατο του χρόνου που χρειάζεται ο επεξεργαστής των 4 W τότε μπορεί να προσφέρει στο σύστημα μεγαλύτερη διάρκεια μπαταρίας.
 
+### Ερώτημα 3
+
+Εάν η λειτουργία του συστήματος δεν τερματιστεί τότε ακόμα και αν ο επεξεργαστής βρίσκεται σε idle κατάσταση θα καταναλώνει ενέργεια που προσδιορίζεται από τη στατική ισχύ (leakage).
+
+Τα αποτελέσματα που προκύπτουν από την εκτέλεση του McPAT για τον Xeon είναι:
+```
+Processor: 
+  Area = 410.507 mm^2
+  Peak Power = 134.938 W
+  Total Leakage = 36.8319 W
+  Peak Dynamic = 98.1063 W
+  Subthreshold Leakage = 35.1632 W
+  Subthreshold Leakage with power gating = 16.3977 W
+  Gate Leakage = 1.66871 W
+  Runtime Dynamic = 72.9199 W
+```
+
+και για τον ARM A9 2GHz:
+```
+Processor: 
+  Area = 5.39698 mm^2
+  Peak Power = 1.74189 W
+  Total Leakage = 0.108687 W
+  Peak Dynamic = 1.6332 W
+  Subthreshold Leakage = 0.0523094 W
+  Gate Leakage = 0.0563774 W
+  Runtime Dynamic = 2.96053 W
+```
+
+Οπότε θεωρώντας ως χρόνο εκτέλεσης Time<sub>1</sub> τον χρόνο εκτέλεσης του προγράμματος στον Xeon και Time<sub>2</sub> = 40 * Time<sub>1</sub> τον χρόνο εκτέλεσης στον ARM A9 2GHz έχουμε:
+<pre>
+Energy<sub>1</sub> < Energy<sub>2</sub>
+
+ή
+
+Time<sub>1</sub> * (Peak Dynamic)<sub>1</sub> + (Time<sub>2</sub> - Time<sub>1</sub>) * (Total Leakage)<sub>1</sub> < Time<sub>2</sub> * (Peak Dynamic)<sub>2</sub>
+
+ή
+
+(Peak Dynamic)<sub>1</sub> + (39 / 40) * (Total Leakage)<sub>1</sub> < 40 * (Peak Dynamic)<sub>2</sub>
+
+ή
+
+98.1063 + (39 / 40) * 36.8319 < 40 * 1.6332
+(αδύνατο)
+</pre>
+
+Παρατηρούμε ότι δεν είναι εφικτό ο Xeon να γίνει πιο energy efficient από τον ARM A9 2GHz κυρίως λόγω της στατικής ισχύος εάν υποθέσουμε ότι τα 2 συστήματα λειτουργούν για τον ίδιο χρόνο.
+
 ## Πηγές
 [1] [semiengineering.com - Power Consumption: Components of power consumption](https://semiengineering.com/knowledge_centers/low-power/low-power-design/power-consumption/)  
 [2] Tarek Darwish, Magdy Bayoumi - The Electrical Engineering Handbook (2005), pp 270-271
