@@ -95,11 +95,11 @@ Energy<sub>1</sub> < Energy<sub>2</sub>
 
 ή
 
-Time<sub>1</sub> * ((Peak Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (Time<sub>2</sub> - Time<sub>1</sub>) * (Total Leakage)<sub>1</sub> < Time<sub>2</sub> * ((Peak Dynamic)<sub>2</sub> + (Total Leakage)<sub>2<\sub>)
+Time<sub>1</sub> * ((Peak Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (Time<sub>2</sub> - Time<sub>1</sub>) * (Total Leakage)<sub>1</sub> < Time<sub>2</sub> * ((Peak Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
 
 ή
 
-(Peak Dynamic)<sub>1</sub> + (39 / 40) * (Total Leakage)<sub>1</sub> < 40 * ((Peak Dynamic)<sub>2</sub> + (Total Leakage)<sub>2<\sub>)
+(Peak Dynamic)<sub>1</sub> + (39 / 40) * (Total Leakage)<sub>1</sub> < 40 * ((Peak Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
 
 ή
 
