@@ -298,6 +298,10 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 | l2s_4096kB | 20.54723 | 1.10710636 | .00836659 | .1620828 | 1.27755575 | 0.705285 | .90104090 | 1.109827 | .054013 |
 | l2s_512kB | 9.35038 | 1.09948306 | .007464225 | .1503635 | 1.257310785 | 0.705519 | .887056647 | 1.127323 | .120564 |
 
+### Ερώτημα 2
+
+![Energy Efficiency per CLS](./charts/energy_efficiency_per_cls.png)
+
 ## Πηγές
 [1] [semiengineering.com - Power Consumption: Components of power consumption](https://semiengineering.com/knowledge_centers/low-power/low-power-design/power-consumption/)  
 [2] Tarek Darwish, Magdy Bayoumi - The Electrical Engineering Handbook (2005), pp 270-271
