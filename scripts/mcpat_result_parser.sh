@@ -14,22 +14,35 @@ for b in "${benchmarks[@]}"; do
     for pm in "${parameters[@]}"; do
         echo -n " ${pm/:/''} |" >> "$res_file"
     done
-    echo "" >> "$res_file"
-    echo -n "| --- |" >> "$res_file"
+    echo " Total Power | Execution Time | Energy | Energy Efficiency | Energy Efficiency / Area |" >> "$res_file"
+    echo -n "| --- | --- | --- | --- | --- | --- |" >> "$res_file"
     for pm in "${parameters[@]}"; do
         echo -n " --- |" >> "$res_file"
     done
     echo "" >> "$res_file"
     for o in "${options[@]}"; do
         echo -n "| $o |" >> "$res_file"
+        declare total_power=0
+        declare area=0
         for pm in "${parameters[@]}"; do
             declare val=0
             for p in "${parts[@]}"; do
                  declare new=$(grep -xn "$p" ./results/"$b"/"$o".txt | awk -F: '{s = $1 + 6} {print s}' | xargs -I {} head -n {} ./results/"$b"/"$o".txt | tail -n 7 | grep "$pm"" = " | awk -F= '{print $2}' | awk -F' '  '{print $1}')
                  val=$(echo "$val + $new" | bc)
             done
+            if [ "$pm" = "Subthreshold Leakage" ] || [ "$pm" = "Gate Leakage" ] || [ "$pm" = "Runtime Dynamic" ]; then
+                total_power=$(echo "$total_power + $val" | bc)
+            fi
+            if [ "$pm" = "Area" ]; then
+                area=$val
+            fi
             echo -n " $val |" >> "$res_file"
         done
+        declare exec_time=$(find ./../my_gem5/spec_results/"$b"/"$o" -type f -name "stats.txt" | xargs -I {} grep "sim_seconds" {} | awk '{print $2}')
+        declare energy=$(echo "$total_power * $exec_time" | bc)
+        declare energy_efficiency=$(echo "scale=6; 1.0 / $energy" | bc)
+        declare energy_efficiency_per_area=$(echo "scale=6; $energy_efficiency / $area" | bc)
+        echo -n " $total_power | $exec_time | $energy | $energy_efficiency | $energy_efficiency_per_area |" >> "$res_file"
         echo "" >> "$res_file"
     done
 done
