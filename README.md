@@ -302,6 +302,12 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 ![Energy Efficiency per CLS](./charts/energy_efficiency_per_cls.png)
 
+![Energy Efficiency per L1 Data Associativity](./charts/energy_efficiency_per_l1_data_associativity.png)
+
+![Energy Efficiency per L1 Instruction Associativity](./charts/energy_efficiency_per_l1_instruction_associativity.png)
+
+![Energy Efficiency per L2 Associativity](./charts/energy_efficiency_per_l2_associativity.png)
+
 ## Πηγές
 [1] [semiengineering.com - Power Consumption: Components of power consumption](https://semiengineering.com/knowledge_centers/low-power/low-power-design/power-consumption/)  
 [2] Tarek Darwish, Magdy Bayoumi - The Electrical Engineering Handbook (2005), pp 270-271
