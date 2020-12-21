@@ -300,6 +300,18 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 ### Ερώτημα 2
 
+![Peak Power per CLS](./charts/peak_power_per_cls.png)
+
+![Peak Power per L1 Data Associativity](./charts/peak_power_per_l1_data_associativity.png)
+
+![Peak Power per L1 Instruction Associativity](./charts/peak_power_per_l1_instruction_associativity.png)
+
+![Peak Power per L2 Associativity](./charts/peak_power_per_l2_associativity.png)
+
+![Peak Power per L1 Data/Instruction Size](./charts/peak_power_per_l1_d_i_size.png)
+
+![Peak Power per L2 Size](./charts/peak_power_per_l2_size.png)
+
 ![Energy Efficiency per CLS](./charts/energy_efficiency_per_cls.png)
 
 ![Energy Efficiency per L1 Data Associativity](./charts/energy_efficiency_per_l1_data_associativity.png)
