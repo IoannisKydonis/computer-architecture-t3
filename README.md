@@ -101,11 +101,11 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 ή
 
-((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + (39 / 40) * (Total Leakage)<sub>1</sub> < 40 * ((Runtime Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
+((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>) + 39 * (Total Leakage)<sub>1</sub> < 40 * ((Runtime Dynamic)<sub>2</sub> + (Total Leakage)<sub>2</sub>)
 
 ή
 
-(72.9199 + 36.8319) + (39 / 40) * 36.8319 < 40 * (2.96053 + 0.108687)
+(72.9199 + 36.8319) + 39 * 36.8319 < 40 * (2.96053 + 0.108687)
 (αδύνατο)
 </pre>
 
