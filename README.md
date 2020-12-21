@@ -301,17 +301,17 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 | l2s_4096kB | 20.54723 | 1.10710636 | .00836659 | .1620828 | 1.27755575 | 0.705285 | .90104090 | 1.109827 | .054013 |
 | l2s_512kB | 9.35038 | 1.09948306 | .007464225 | .1503635 | 1.257310785 | 0.705519 | .887056647 | **1.127323** | **.120564** |
 
-Οι βέλτιστες τιμές με βάση το Energy Efficiency που προκύπτουν για τα 2 benchmarks (bzip, hmmer) που εξετάστηκαν στην προηγούμενη εργασία είναι οι εξής:
+Οι βέλτιστες τιμές με βάση το _Energy Efficiency / Area_ που προκύπτουν για τα 2 benchmarks (bzip, hmmer) που εξετάστηκαν στην προηγούμενη εργασία είναι οι εξής:
 
 | Παράμετρος | bzip | hmmer | Τελική επιλογή |
 | --- | --- | --- | --- |
 | Cacheline Size | 32 | 32 | 32 |
 | L1 Data Associativity | 4 | 4 | 4 |
-| L1 Instruction Associativity | 1 | 2 | 2 |
-| L2 Associativity | 4 | 1 | 2 |
-| L1 Data Size | 32kB | 32kB | 32kB |
+| L1 Instruction Associativity | 1 | 1 | 1 |
+| L2 Associativity | 1 | 1 | 1 |
+| L1 Data Size | 32kB | 16kB | 32kB |
 | L1 Instruction Size | 16kB | 16kB | 16kB |
-| L2 Size | 4096kB | 512kB | 2048kB |
+| L2 Size | 512kB | 512kB | 512kB |
 
 Οι βέλτιστες επιλογές που προέκυψαν στην δεύτερη εργασία από τη συνάρτηση _Performance / Cost_ είναι αντίστοιχα:
 
