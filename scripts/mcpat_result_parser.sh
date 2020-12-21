@@ -5,7 +5,6 @@ declare -a options=("cls_128" "cls_32" "cls_64" "l1da_1" "l1da_2" "l1da_4" "l1ds
  "l1ds_16kB_l1is_16kB" "l1ds_16kB_l1is_32kB" "l1ds_16kB_l1is_64kB" "l1ds_32kB_l1is_128kB" "l1ds_32kB_l1is_16kB" "l1ds_32kB_l1is_32kB" "l1ds_32kB_l1is_64kB" "l1ds_64kB_l1is_128kB"
  "l1ds_64kB_l1is_16kB" "l1ds_64kB_l1is_32kB" "l1ds_64kB_l1is_64kB" "l1ia_1" "l1ia_2" "l1ia_4" "l2a_1" "l2a_2" "l2a_4" "l2s_1024kB" "l2s_2048kB" "l2s_4096kB" "l2s_512kB")
 declare -a parts=("Core:" "L2")
-declare -a labels=("Core" "L2")
 declare -a parameters=("Subthreshold Leakage" "Gate Leakage" "Runtime Dynamic")
 
 for b in "${benchmarks[@]}"; do
@@ -15,8 +14,8 @@ for b in "${benchmarks[@]}"; do
         echo -n "" >> "$res_file"
 
         echo -n "| Parameters |" >> "$res_file"
-        for l in "${labels[@]}"; do
-            echo -n " $l |" >> "$res_file"
+        for p in "${parts[@]}"; do
+            echo -n " ${p/:/''} |" >> "$res_file"
         done
         echo "" >> "$res_file"
         echo -n "| --- |" >> "$res_file"
