@@ -303,15 +303,27 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 Οι βέλτιστες τιμές με βάση το Energy Efficiency που προκύπτουν για τα 2 benchmarks (bzip, hmmer) που εξετάστηκαν στην προηγούμενη εργασία είναι οι εξής:
 
-| Option | bzip | hmmer |
-| --- | --- | --- |
-| Cacheline Size | 32 | 32 |
-| L1 Data Associativity | 4 | 4 |
-| L1 Instruction Associativity | 1 | 2 |
-| L2 Associativity | 4 | 1 |
-| L1 Data Size | 32kB | 32kB |
-| L1 Instruction Size | 16kB | 16kB |
-| L2 Size | 4096kB | 512kB |
+| Παράμετρος | bzip | hmmer | Τελική επιλογή |
+| --- | --- | --- | --- |
+| Cacheline Size | 32 | 32 | 32 |
+| L1 Data Associativity | 4 | 4 | 4 |
+| L1 Instruction Associativity | 1 | 2 | 2 |
+| L2 Associativity | 4 | 1 | 2 |
+| L1 Data Size | 32kB | 32kB | 32kB |
+| L1 Instruction Size | 16kB | 16kB | 16kB |
+| L2 Size | 4096kB | 512kB | 2048kB |
+
+Οι βέλτιστες επιλογές που προέκυψαν στην δεύτερη εργασία από τη συνάρτηση _Performance / Cost_ είναι αντίστοιχα:
+
+| Παράμετρος | bzip | hmmer | Τελική επιλογή |
+| --- | --- | --- | --- |
+| Cacheline Size | 128 | 128 | 128 |
+| L1 Data Associativity | 1 | 2 | 2 |
+| L1 Instruction Associativity | 1 | 2 | 1 |
+| L2 Associativity | 2 | 1 | 2 |
+| L1 Data Size | 32kB | 128kB | 64kB |
+| L1 Instruction Size | 16kB | 32kB | 32kB |
+| L2 Size | 4096kB | 512kB | 2048kB |
 
 ### Ερώτημα 2
 
