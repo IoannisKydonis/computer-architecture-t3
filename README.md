@@ -317,15 +317,27 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 ![Peak Power per CLS](./charts/peak_power_per_cls.png)
 
+Παρατηρούμε το ίδιο μοτίβο αύξησης του peak power για όλα τα benchmarks.
+
 ![Peak Power per L1 Data Associativity](./charts/peak_power_per_l1_data_associativity.png)
+
+Παρατηρούμε ότι υπάρχει δυσανάλογα μεγάλη πτώση από την τιμή 2 στην τιμή 4.
 
 ![Peak Power per L1 Instruction Associativity](./charts/peak_power_per_l1_instruction_associativity.png)
 
+Παρατηρούμε ότι υπάρχει δυσανάλογα μεγάλη αύξηση από την τιμή 2 στην τιμή 4.
+
 ![Peak Power per L2 Associativity](./charts/peak_power_per_l2_associativity.png)
+
+Παρατηρούμε ότι όλες οι τιμές δίνουν σχεδόν το ίδιο peak power.
 
 ![Peak Power per L1 Data/Instruction Size](./charts/peak_power_per_l1_d_i_size.png)
 
+Παρατηρούμε ότι και για την data και για την instruction L1 υπάρχει δυσανάλογα μεγάλη αύξηση του peak power από 32kB σε 64kB και από 64kB σε 128kB.
+
 ![Peak Power per L2 Size](./charts/peak_power_per_l2_size.png)
+
+Παρατηρούμε ότι υπάρχει σταθερή αύξηση σε κάθε βήμα για όλα τα benchmarks.
 
 ![Energy Efficiency per CLS](./charts/energy_efficiency_per_cls.png)
 
