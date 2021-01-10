@@ -118,6 +118,8 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 Για την εξαγωγή των παρακάτω αποτελεσμάτων σε markdown format χρησιμοποιήθηκε το script που βρίσκεται [εδώ](./scripts/mcpat_result_parser.sh).
 
+Με bold γραμματοσειρά έχουν σημειωθεί οι βέλτιστες επιλογές για κάθε ομάδα δοκιμών (cls, l1da κλπ).
+
 Ακολουθούν τα αποτελέσματα του McPAT για την περίπτωση του bzip:
 
 | Option | Area | Subthreshold Leakage | Gate Leakage | Runtime Dynamic | Total Power | Execution Time | Energy | Energy Efficiency | Energy Efficiency / Area |
@@ -303,7 +305,7 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 | l2s_4096kB | 20.54723 | 1.10710636 | .00836659 | .1620828 | 1.27755575 | 0.705285 | .90104090 | 1.109827 | .054013 |
 | l2s_512kB | 9.35038 | 1.09948306 | .007464225 | .1503635 | 1.257310785 | 0.705519 | .887056647 | **1.127323** | **.120564** |
 
-Οι βέλτιστες τιμές με βάση το _Energy Efficiency / Area_ (έχουν σημειωθεί με bold πάνω στον πίνακα αποτελεσμάτων) που προκύπτουν για τα 2 benchmarks (bzip, hmmer) που εξετάστηκαν στην προηγούμενη εργασία είναι οι εξής:
+Οι βέλτιστες τιμές με βάση το _Energy Efficiency / Area_ που προκύπτουν για τα 2 benchmarks (bzip, hmmer) που εξετάστηκαν στην προηγούμενη εργασία είναι οι εξής:
 
 | Παράμετρος | bzip | hmmer | Τελική επιλογή |
 | --- | --- | --- | --- |
