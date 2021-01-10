@@ -362,11 +362,19 @@ Time<sub>1</sub> * ((Runtime Dynamic)<sub>1</sub> + (Total Leakage)<sub>1</sub>)
 
 ![Energy Efficiency per CLS](./charts/energy_efficiency_per_cls.png)
 
+Παρατηρούμε ότι για κάποια benchmarks η αύξηση του cache line size μπορεί να μειώσει σημαντικά το energy efficiency.
+
 ![Energy Efficiency per L1 Data Associativity](./charts/energy_efficiency_per_l1_data_associativity.png)
+
+Παρατηρούμε ότι για όλα τα benchmarks το associativity 1 στην L1 data cache είναι εξίσου energy efficient με το 2 ενώ το 4 παρουσιάζει μεγάλη αύξηση.
 
 ![Energy Efficiency per L1 Instruction Associativity](./charts/energy_efficiency_per_l1_instruction_associativity.png)
 
+Παρατηρούμε ότι για όλα τα benchmarks πλην του mcf το associativity 2 στην L1 instruction cache είναι εξίσου energy efficient με το 1 ενώ το 4 παρουσιάζει πτώση.
+
 ![Energy Efficiency per L2 Associativity](./charts/energy_efficiency_per_l2_associativity.png)
+
+Παρατηρούμε ότι για όλα τα benchmarks το energy efficiency της L2 cache είναι σχεδόν σταθερό για κάθε επιλογή associativity.
 
 Τα συμπεράσματα που έχουν προκύψει ενδέχεται να έχουν σημαντικές αποκλίσεις από την πραγματική βέλτιστη λύση.
 Μέρος του σφάλματος οφείλεται στον υπολογισμό της επίδρασης της κάθε παραμέτρου ξεχωριστά, ενώ στην πραγματικότητα μπορεί να προκύψει καλύτερη λύση δοκιμάζοντας όλους τους συνδυασμούς.
